@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      form{
+        text-align: center;
+        margin: 150px;
+      }
+      button{
+        margin: 50px;
+      }
+      .menu {
+        background-color: #111111;
+        font-weight: bold;
+        text-align: center;
+      }
+      a {
+        color: #402E2A;
+        width:100px;
+        line-height: 30px;
+        display:inline-block;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: #111111;
+        color: black;
+        cursor:pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="/question">ANSWER</a>
+      <a href="/ask">ASK</a>
+    </nav>
+    <form method="post" action='/api/question/{{{id}}}'>
+      {{{content}}}</br>
+      <button name = 'yes' type ='submit' value = y>YES</button>
+      <button name = 'no' type ='submit' value = n>NO</button>
+    </form>
+  </body>
+</html>

@@ -12,8 +12,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   let questionList;
   try {
-    questionList =
-    JSON.parse(fs.readFileSync('question.json', 'utf-8'));
+    questionList = JSON.parse(fs.readFileSync('question.json', 'utf-8'));
   } catch (exception) {
       console.log(exception);
       questionList = [];

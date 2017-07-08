@@ -12,7 +12,6 @@ let hbs = exhbs.create({});
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended : true}));
 
-//app.engine('handlebars' , hbs.engine);
 app.engine('handlebars', exhbs ({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
@@ -38,5 +37,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(6969, () => {
-  console.log('app is running. listening on :6969');
+  console.log('app is running:6969');
 });

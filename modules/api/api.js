@@ -17,12 +17,12 @@ router.post('/question/:id', (req, res) => {
       questionList = [];
   }
 
-  if(req.body.choiceYes =='yes') {
-      questionList[req.params.id].yes += 1;
-  }
-  else {
-      questionList[req.params.id].no += 1;
-  }
+  // if(req.body.choiceYes =='yes') {
+  //     questionList[req.params.id].yes += 1;
+  // }
+  // else {
+  //     questionList[req.params.id].no += 1;
+  // }
 
   fs.writeFileSync('question.json',
   JSON.stringify(questionList));

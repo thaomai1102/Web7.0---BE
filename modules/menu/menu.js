@@ -1,5 +1,3 @@
-/*DEFINE ROUTER FOR / */
-//using html and css file to display menu
 const express = require('express');
 const path = require('path');
 

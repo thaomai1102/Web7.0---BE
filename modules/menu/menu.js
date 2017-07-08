@@ -5,12 +5,12 @@ const path = require('path');
 
 let router = express.Router();
 
-let fileMenuHtml = path.join(__dirname, '../../public/menu.html');
+let fileMenu = path.join(__dirname, '../../public/menu.html');
 
 router.use(express.static('public'));
 
 router.get('/', (req,res) => {
-  res.sendFile(fileMenuHtml);
+  res.sendFile(fileMenu);
 });
 
 module.exports = router;
